@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ShoesShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAA6B373-6ACC-414B-A202-399D912FC4F8}|ShoesShop\\ShoesShop.csproj|e:\\shoesshop\\shoesshop\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{DAA6B373-6ACC-414B-A202-399D912FC4F8}|ShoesShop\\ShoesShop.csproj|solutionrelative:shoesshop\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "E:\\ShoesShop\\ShoesShop\\Model1.edmx",
+              "RelativeDocumentMoniker": "ShoesShop\\Model1.edmx",
+              "ToolTip": "E:\\ShoesShop\\ShoesShop\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "ShoesShop\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-05-27T19:23:03.699Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

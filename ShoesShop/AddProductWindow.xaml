@@ -1,0 +1,74 @@
+<Window x:Class="ShoesShop.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Style="{StaticResource Windows}"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Title="Добавить товар" Height="620" Width="560">
+    <Border Margin="24" Background="White" CornerRadius="16" Padding="24" BorderBrush="{StaticResource Line}" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="0 0 0 18">
+                <TextBlock Text="Новый товар" FontSize="28" FontWeight="Bold"/>
+                <TextBlock Text="Заполните данные, товар сразу появится в каталоге" Foreground="{StaticResource MutedText}"/>
+            </StackPanel>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <Grid Margin="0 0 8 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Артикул" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <TextBox x:Name="ArticleBox" Grid.Row="0" Grid.Column="1" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Категория" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <ComboBox x:Name="CategoryBox" Grid.Row="1" Grid.Column="1" DisplayMemberPath="Category" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Тип обуви" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <ComboBox x:Name="TypeBox" Grid.Row="2" Grid.Column="1" DisplayMemberPath="ProductType1" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Бренд" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <ComboBox x:Name="ProducerBox" Grid.Row="3" Grid.Column="1" DisplayMemberPath="Producer" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="Поставщик" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <ComboBox x:Name="SupplierBox" Grid.Row="4" Grid.Column="1" DisplayMemberPath="Supplier" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="5" Grid.Column="0" Text="Цена" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <TextBox x:Name="PriceBox" Grid.Row="5" Grid.Column="1" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="6" Grid.Column="0" Text="Количество" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <TextBox x:Name="QuantityBox" Grid.Row="6" Grid.Column="1" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="7" Grid.Column="0" Text="Фото" VerticalAlignment="Center" Margin="0 0 10 12"/>
+                    <ComboBox x:Name="PhotoBox" Grid.Row="7" Grid.Column="1" Margin="0 0 0 12"/>
+
+                    <TextBlock Grid.Row="8" Grid.Column="0" Text="Описание" VerticalAlignment="Top" Margin="0 8 10 0"/>
+                    <TextBox x:Name="DescriptionBox" Grid.Row="8" Grid.Column="1" MinHeight="100" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+                </Grid>
+            </ScrollViewer>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 20 0 0">
+                <Button Content="Отмена" Click="CancelButton_Click" Background="#6B7280" BorderBrush="#6B7280" Margin="0 0 10 0"/>
+                <Button Content="Сохранить товар" Click="SaveButton_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
